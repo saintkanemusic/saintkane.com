@@ -1,21 +1,27 @@
 p{
     font-weight: 50;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
 }
 
 h1{
     font-family:  "Courier New", Courier, monospace;
     font-weight: lighter;
+    font-size: 1rem;
 }
 h2{
     font-family:  "Courier New", Courier, monospace;
     font-weight: lighter;
+    font-size: 1.2rem;
+    height: 0%;
+    margin: 0rem;
+
 }
 h3{
     font-family:  "Courier New", Courier, monospace;
     font-weight: lighter;
     margin-bottom: 2rem;
-    
+    font-size: 1rem;
 }
 
 a:visited{
@@ -23,8 +29,7 @@ color: #000000;
 }
 
 .NavTitle{
-    line-height: 100%;
-    padding-top: 0px;
+    height: 80%;
 }
 
 .Spanner{
@@ -88,7 +93,7 @@ banner {
 }
 
 .band h2 {
-    font-size: 28px;
+    font-size: 1rem;
     font-weight: bold;
 
     /* Adjust the font size */
@@ -107,7 +112,7 @@ banner {
     border-radius: 25px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.433);
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     max-width: 300px;
     padding: 20px;
@@ -118,7 +123,7 @@ banner {
     border: 0px;
     border-radius: 32px;
     color: white;
-    font-size: 32px;
+    font-size: 1rem;
     font-weight: bold;
     max-width: 300px;
     padding: 25px;
@@ -183,14 +188,13 @@ banner {
     background-color: #36a5ff00;
     border: 3px;
     border-color: #7d7d7d;
-    border-radius: 2px;
+    border-radius: 0px;
     color: rgb(0, 0, 0);
-    font-size: 18px;
-    height: 50px;
+    font-size: 0.9rem;
+    height: 2.5rem;
     margin: 0px;
     padding: 0px;
     stroke: 1px;
-    width: 130px;
 }
 
 .donate:active {
@@ -206,15 +210,16 @@ banner {
 }
 
 header {
-    align-items: center;
     background-color: #ffffff;
     box-shadow: 0px 3px 8px #d2d2d2;
     box-sizing: border-box;
     display: flex;
-    height: 50px;
+    flex-wrap: wrap;
+    height: 2.5rem;
+    align-items: stretch;
     justify-content: space-between;
     left: 0;
-    padding: 0px 3% 0px 2%;
+    padding: 0rem 3% 0rem 3%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -248,9 +253,9 @@ header {
 .form-submit {
 background-color: #ffae00;
     box-shadow: 0 0px #000000;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
     padding: 0px 0px 0px 0px;
-    width: 40rem;
     height: 3rem;
     margin: 10px 10px 10px 0px;
 }
@@ -334,9 +339,23 @@ transform: translateY(3px);
 }
 
 #leftBanner {
+    height: 100%;
     align-items: center;
+    justify-content: left;
     display: flex;
-    width: 200px;
+    width: 20%;
+    padding: 0.5rem 0rem 0rem 0rem;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+#rightEndOfBanner {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 1rem;
 }
 
 .logotype{
@@ -346,7 +365,9 @@ transform: translateY(3px);
 .menu{
     align-items: center;
     display: flex;
-    line-height: 20px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .menuButton{
@@ -354,11 +375,12 @@ transform: translateY(3px);
     border: 0px;
     border-radius: 0px;
     color: rgb(160, 160, 160);
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 100;
-    height: 50px;
+    
+    height: 100%;
     margin: 0px;
-    width: 130px;
+    
 }
 
 .menuButton:active {
@@ -383,12 +405,6 @@ body {
     color: #000000;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 100;
-}
-
-#rightEndOfBanner {
-    align-items: center;
-    display: flex;
-    width: 200px;
 }
 
 .separatorLineVert{
@@ -425,10 +441,10 @@ button{
     border: 0px;
     border-radius: 0px;
     color: white;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 100;
     margin: 10px;
-    max-width: 150px;
+    width: 6.8rem;
     padding: 10px;
 }
 
@@ -441,4 +457,48 @@ button:active {
 button:hover {
 
 background-color: #4661b0
+}
+@media (max-width: 849px) {
+  /* mobile-specific styles here */
+  #leftBanner {order: 1;}
+  #rightEndOfBanner { 
+    order: 2;
+    width: auto;
+    height: 2.5rem;
+    margin: 0rem 1rem 0rem 0rem;
+}
+  .menu {
+    order: 3;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: center;
+}
+  header{
+    flex-wrap: wrap;
+    min-height: 2.5rem;
+    height: auto;
+  }
+  .Spanner{
+    width: 22rem;
+  }
+}
+@media (max-width: 400px) {
+  /* mobile-specific styles here */
+  #leftBanner {order: 1;}
+  #rightEndOfBanner { 
+    order: 2;
+    width: auto;
+    margin: 0rem 1rem 0rem 0rem;
+}
+  .menu {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+}
+  header{
+    flex-wrap: wrap;
+  }
+  .Spanner{
+    width: 18rem;
+  }
 }
