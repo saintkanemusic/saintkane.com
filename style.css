@@ -488,6 +488,9 @@ background-color: #4661b0
     height: 2.5rem;
     justify-content: center;
 }
+h3{
+    margin-bottom: 1rem;
+}
   header{
     flex-wrap: wrap;
     min-height: 2.5rem;
@@ -495,8 +498,8 @@ background-color: #4661b0
   }
   .Spanner{
     width: 22rem;
-    padding-bottom: 2.5rem;
-    max-height: 60vh;
+    padding-bottom: 1.5rem;
+    max-height: 55vh;
   }
   .contact-section{
     margin-top: 2.5rem;
@@ -507,7 +510,7 @@ padding: 0%;
   }
   .underBanner{
     height: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 400px) {
