@@ -11,7 +11,7 @@
 
 
 </head>
-<body id="homePage">
+<body>
     <header>
         <div id="leftBanner">
             <div class="NavTitle">
@@ -33,46 +33,49 @@
             <div class="separatorLineVert"></div>
         </div>
     </header>
-<section class="contact-section">
-  <div class="contact-intro">
-    <h2 class="contact-title">hmu</h2>
-    <p class="contact-description">
-      whats on your mind?
-    </p>
+<div class="home">
+  <div class="underBanner"></div>
+  <div class="Spanner">
+    <section class="contact-section">
+        <div class="contact-intro">
+          <h2 class="contact-title">hmu</h2>
+          <p class="contact-description">
+            whats on your mind?
+          </p>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="b28e223f-cdc7-434e-9649-51e94cead5a1" />
+            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+            <input type="hidden" name="from_name" value="My Website" />
+            <!-- This won't work after being published -->
+        <input type="hidden" name="redirect" value="https://www.saintkane.com/thankyou">
+            <!-- More customization options available in the docs: https://docs.web3forms.com -->
+
+            <div class="form-group-container">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input id="name" name="name"  placeholder="Your name" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" placeholder="Your email" type="email" />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input id="phone" name="phone"  placeholder="+1 (234) 56789" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <button class="form-submit" type="submit">send</button>
+        </form>
+    </section>
   </div>
-
-  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
-    <input type="hidden" name="access_key" value="b28e223f-cdc7-434e-9649-51e94cead5a1" />
-    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-    <input type="hidden" name="from_name" value="My Website" />
-    <!-- This won't work after being published -->
-<input type="hidden" name="redirect" value="https://www.saintkane.com/thankyou">
-    <!-- More customization options available in the docs: https://docs.web3forms.com -->
-
-    <div class="form-group-container">
-      <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input id="name" name="name"  placeholder="Your name" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input id="email" name="email" placeholder="Your email" type="email" />
-      </div>
-      <div class="form-group">
-        <label for="phone" class="form-label">Phone</label>
-        <input id="phone" name="phone"  placeholder="+1 (234) 56789" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-      </div>
-    </div>
-    <button class="form-submit" type="submit">send</button>
-  </form>
-</section>
-
-
+</div>
         </div>
     </div>
 </body></html>
