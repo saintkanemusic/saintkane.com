@@ -475,6 +475,9 @@ background-color: #4661b0
 }
 @media (max-width: 849px) {
   /* mobile-specific styles here */
+  body.contact-page .underBanner{
+    margin-bottom: 4rem;
+  }
   #leftBanner {order: 1;}
   #rightEndOfBanner { 
     order: 2;
@@ -501,6 +504,7 @@ h3{
     padding-bottom: 1.5rem;
     max-height: 55vh;
   }
+
   .contact-section{
     margin-top: 2.5rem;
     width: 17rem;
