@@ -201,17 +201,19 @@ banner {
     stroke: 1px;
 }
 
-.donate:active {
+.donate:hover {
     background-color: #0b84fd;
+    color: #000000;
+}
+
+.donate:active {
+    background-color: #36a4ff;
     box-shadow: 0 0px #000000;
     padding: 3px 0px 0px 0px;
     transform: translateY(0px);
 }
 
-.donate:hover {
-    background-color: #36a4ff;
-    color: #ffffff;
-}
+
 
 header {
     background-color: #ffffff;
@@ -390,17 +392,17 @@ transform: translateY(3px);
     
 }
 
+.menuButton:hover{
+    background-color: #ffae00;
+    color: rgb(0, 0, 0);
+}
+
 .menuButton:active {
     background-color: #fcbf06;
     box-shadow: 0 0px #000000;
     color: rgb(0, 0, 0);
     padding: 3px 0px 0px 0px;
     transform: translateY(0px);
-}
-
-.menuButton:hover{
-    background-color: #ffae00;
-    color: rgb(0, 0, 0);
 }
 
 input{
