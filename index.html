@@ -10,8 +10,13 @@
 
 
 </head>
-<body id="music">
-    
+<body id="home">
+    <script>
+    function openInNewTab(url) {
+      // Open the URL in a new tab
+      window.open(url, '_blank');
+    }
+    </script>
     <header>
         <div id="leftBanner">
             <div class="NavTitle">
@@ -20,7 +25,7 @@
         </div>
         <div class="menu">
             <div class="separatorLineVert"></div>
-            <button class="menuButton" onclick="window.location.href='/';">music</button>
+            <button class="menuButton" onclick="window.location.href='/';">home</button>
             <div class="separatorLineVert"></div>
             <button class="menuButton" onclick="window.location.href='merch';" style="display: none;">merch</button>
             <div class="separatorLineVert" style="display: none;"></div>
@@ -35,13 +40,40 @@
     </header>
     <div class="home">
         <div class="underBanner"></div>
-        <div class="Spanner">
-            <h3>artist profile</h3>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0lNKc7SJzXDsrHrTrQ2H1r?utm_source=generator&theme=0" width="100%" height="400px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        <div class="Spanner">
-            <h3>98F</h3>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3B0uew7FtdFqecAMhHXiVC?utm_source=generator" width="100%" height="700px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="Column">
+            <div class="colChild">
+                <h3>COMING 4/24</h3>
+                <img src="around cover.jpg" alt="around coverart" class="coverArt" onclick="openInNewTab('https://music.apple.com/us/album/around-single/1885766010')">
+                <button class="menuButton2 call2Action" onclick="openInNewTab('https://music.apple.com/us/album/around-single/1885766010')">
+                                PRESAVE ON APPLE MUSICS
+                </button>
+            </div>
+            <div style="width: 1%;"></div>
+            <div class="colChild">
+                <h3>LINKS</h3>
+                <div class="vertMenu">
+                        <button class="menuButton2" onclick="openInNewTab('https://open.spotify.com/artist/0lNKc7SJzXDsrHrTrQ2H1r?si=jv4b64VFSqqvzBf9ioILdQ')">
+                            spotify
+                        </button>
+                    <div class="separatorLineHorz"></div>
+                        <button class="menuButton2" onclick="openInNewTab('https://music.apple.com/us/artist/saint-kane/1838528545')">
+                            apple music
+                        </button>
+                    <div class="separatorLineHorz"></div>
+                        <button class="menuButton2" onclick="openInNewTab('https://www.instagram.com/saintkane.wav/')">
+                            instagram
+                        </button>
+                    <div class="separatorLineHorz"></div>
+                        <button class="menuButton2" onclick="openInNewTab('https://www.tiktok.com/@saintkane.wav?_r=1&_t=ZP-954suKSZ1ax')">
+                            tiktok
+                        </button>
+                    <div class="separatorLineHorz"></div>
+                        <button class="menuButton2" onclick="openInNewTab('https://www.twitch.tv/saintkanemusic')">
+                            twitch
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body></html>
